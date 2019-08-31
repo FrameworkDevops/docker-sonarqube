@@ -105,7 +105,7 @@ results=()
 
 for image in "${images[@]}"; do
     image=${image%/}
-    if ! [[ -d "$image" ]]; then
+    if ! [[ -d "" ]]; then
         warn "not a valid image, directory does not exist: $image"
         results+=("error")
         continue
